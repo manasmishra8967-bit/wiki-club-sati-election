@@ -107,3 +107,4 @@ Do not commit:
 
 **Wiki Club SATI**  
 South Asia Technical Initiative
+Wiki Club SATI Board Election Website
