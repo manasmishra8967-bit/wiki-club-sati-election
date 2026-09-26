@@ -140,7 +140,7 @@ async function init(){
 }
 
 function renderClosed(){
-  setHeader('Core Organizing Team Election', 'Nothing open right now — check back soon.');
+  setHeader('Executive Board Elections', 'Nothing open right now — check back soon.');
   document.getElementById('app').innerHTML = `
     <div class="card"><h2>No action needed right now</h2>
     <p class="sub">Nominations and voting will be announced by the organizing team.</p></div>`;
@@ -248,7 +248,7 @@ async function submitNomination(){
 
 // ---------------- VOTING PHASE ----------------
 async function renderVotingForm(){
-  setHeader('Core Organizing Team Election', 'Vote for a nominee in each position and tell us briefly why.');
+  setHeader('Executive Board Elections', 'Vote for a nominee in each position and tell us briefly why.');
   const res = await fetch(WEBAPP_URL + '?action=candidates');
   const data = await res.json();
   CANDIDATES_BY_POSITION = data.candidates || {};
